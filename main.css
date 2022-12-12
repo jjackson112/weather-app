@@ -57,13 +57,71 @@ body {
 }
 
 .first-part {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     margin-top: 10px;
     border-radius: 10px;
+    background-color: rgba(120, 236, 211, 0.959);
+    width: 100%;
+    height: 70%;
 }
 
 .first-part img {
-    width: 140px;
+    width: 170px;
+    padding: 0 0 0 20px;
+}
+
+.first-part .temp {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex: 1;
+    margin-top: -90px;
+}
+
+.first-part .temp .deg {
+    font-size: 35px;
+    font-weight: 600;
+    margin: 0 -45px -25px;
+    color: fuchsia;
+}
+
+.first-part .temp .number {
+    font-size: 25px;
+    font-weight: 600;
+    color: magenta;
+}
+
+.first-part .temp .weather {
+    font-size: 20px;
+    font-weight: 600;
+    color: blue;
+}
+
+.first-part .location {
+    position: relative;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    text-align: center;
+    margin-top: -70px;
+}
+
+.first-part .location i {
+    color: red;
+    font-size: 32px;
+    padding-bottom: 5px;
+}
+
+.first-part .location span {
+    font-size: 20px;
+    font-weight: 600;
+    color: blue;
+}
+
+.second-part {
+    position: absolute;
+    bottom: 20px;
 }

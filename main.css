@@ -124,4 +124,42 @@ body {
 .second-part {
     position: absolute;
     bottom: 20px;
+    left: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 48%;
+    padding-bottom: 30px;
+}
+
+.second-part .column, .second-part .column-1 {
+    text-align: center;
+}
+
+.second-part .column i{
+    font-size: 32px;
+    color: #f73c03;
+}
+
+.second-part .temp .number-2, .second-part .details span {
+    font-size: 25px;
+    font-weight: 600;
+    color: fuchsia;
+}
+
+.second-part .temp .deg {
+    font-size: 35px;
+    font-weight: 600;
+    color: red;
+}
+
+.second-part p {
+    font-size: 20px;
+    font-weight: 600;
+    color: blue;
+}
+
+.second-part .column-1 i {
+    font-size: 32px;
+    color: dodgerblue;
 }

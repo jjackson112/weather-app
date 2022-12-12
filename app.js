@@ -32,5 +32,7 @@ function weatherDetails(info) {
     
     container.querySelector('.temp .number').innerText = Math.floor(temp);
     container.querySelector('.temp .weather').innerText = description;
-    container.querySelector('.temp .number').innerText
+    container.querySelector('.location span').innerText = `${city} ${country}`;
+    container.querySelector('.second-part .temp .number-2').innerText = Math.floor(feels_like);
+    container.querySelector('.column-1 .details span').innerText = `${humidity}`
 }

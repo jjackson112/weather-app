@@ -1,5 +1,6 @@
 const container = document.querySelector('.container');
 const inputField = document.querySelector('input');
+const weatherImg = document.querySelector('.first-part img')
 
 inputField.addEventListener('keyup', (e) => {
     //console.log(e.target.value); the city name shows up in the console
@@ -20,7 +21,7 @@ function requestApi(city) {
 
 function weatherDetails(info) {
     // key value pairs show up like clouds, humidity and timezones, etc
-    // console.log(info);
+    console.log(info);
 
     // let's get required properties from the info object
     const city = info.name;
@@ -35,4 +36,10 @@ function weatherDetails(info) {
     container.querySelector('.location span').innerText = `${city} ${country}`;
     container.querySelector('.second-part .temp .number-2').innerText = Math.floor(feels_like);
     container.querySelector('.column-1 .details span').innerText = `${humidity}`
+
+    // use custom icon according to the id which api returns us
+
+    if (id == 800) {
+
+    }
 }

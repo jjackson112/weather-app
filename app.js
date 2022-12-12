@@ -10,3 +10,10 @@ inputField.addEventListener('keyup', (e) => {
     requestApi(inputField.value);
     }
 });
+
+function requestApi(city) {
+    let api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=27cd174a3b303dec7b59e42eadf52e77`;
+    // the link shows up in the console
+    // console.log(api);
+    fetch(api).then(res => res.json()). then(result => weatherDetails(result))
+}
